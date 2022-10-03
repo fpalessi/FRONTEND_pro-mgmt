@@ -6,7 +6,7 @@ const useAdmin = () => {
   const { auth } = useAuth();
 
   // If the authenticated user (auth._id) is the creator (project.creator) -> admin
-  return project.creator === auth._id;
+  return project?.creator === auth._id;
 };
 
 export default useAdmin;

@@ -19,14 +19,14 @@ const Project = () => {
     getProject(params.id);
   }, []);
 
-  const { name } = project;
+  // const { name } = project;
 
   if (loading) return <Spinner />;
 
   return (
     <>
       <div className="flex justify-between">
-        <h1 className="text-4xl">{name}</h1>
+        <h1 className="text-4xl">{project?.name}</h1>
         {admin && (
           <div className="flex items-center gap-2 text-gray-700 text-xl hover:text-black">
             <Link
@@ -63,8 +63,8 @@ const Project = () => {
       <p className="font-bold text-xl mt-10">Tareas del Proyecto 📝</p>
 
       <div className="bg-white shadow mt-10 rounded-lg">
-        {project.tasks?.length ? (
-          project.tasks?.map((task) => <Task key={task._id} task={task} />)
+        {project?.tasks?.length ? (
+          project?.tasks?.map((task) => <Task key={task._id} task={task} />)
         ) : (
           <p className="text-center my-5 p-10">
             No hay tareas en este proyecto

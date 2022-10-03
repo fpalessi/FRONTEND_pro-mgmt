@@ -61,7 +61,7 @@ const FormTaskModal = ({}) => {
     setPriority("");
   };
 
-  const { msg } = alert;
+  // const { msg } = alert;
 
   return (
     <Transition.Root show={modalFormTask} as={Fragment}>
@@ -129,7 +129,7 @@ const FormTaskModal = ({}) => {
                   >
                     {id ? "Editar Tarea" : "Crear una nueva tarea"}
                   </Dialog.Title>
-                  {msg && <Alert alert={alert} />}
+                  {alert?.msg && <Alert alert={alert} />}
                   <form onSubmit={handleSubmit} className="my-10">
                     <div className="mb-5">
                       <label

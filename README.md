@@ -7,4 +7,5 @@ Design was done with TailwindCSS and the state was handled with Context API. <br
 It has many functionalities such as adding (editing and deleting) projects, adding new tasks to each of these projects, etc. 
 You can also add collaborators (registered users) to these tasks who can mark them as completed once they finished them.
 
-Here you have 2 created accounts to test the app since Nodemailer is charging $820 for a 1 year license: test@outlook.es - 123test || test@gmail.com - test123.
+Password reset and account confirmation by email are both disabled since Nodemailer is charging $820 for a 1 year license. Here you have 2 accounts with some projects as a demo, or feel free to create your own one. 
+ test@outlook.es - 123test || test@gmail.com - test123.

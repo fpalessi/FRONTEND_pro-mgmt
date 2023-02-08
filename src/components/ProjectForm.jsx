@@ -38,14 +38,13 @@ const ProjectForm = () => {
     setDeliveryDate("");
     setClient("");
   };
-  const { msg } = alert;
 
   return (
     <form
       className="bg-white py-10 px-5 md:w-1/2 rounded-lg shadow"
       onSubmit={handleSubmit}
     >
-      {msg && <Alert alert={alert} />}
+      {alert.msg && <Alert alert={alert} />}
       <div className="mb-5">
         <label className="text-gray-800 block text-lg" htmlFor="name">
           Nombre del proyecto{" "}
